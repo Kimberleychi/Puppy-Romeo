@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost: 100, 200, 300, 400, 500, 600, 700| Playfair: 100, 200, 300, 400, 500, 600, 700');
 /*---------------------------------------------FONT CDN added INTENT check this------------------------------------------------------------*/
-
+/*------------Body------------*/
 html,
 body,
 header,
@@ -18,7 +18,7 @@ header,
 }
 
 .top-nav-collapse {
-  background-color: #78909c !important;
+  background-color: transparent !important;
 }
 
 .navbar:not(.top-nav-collapse) {
@@ -27,9 +27,22 @@ header,
 
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
-    background: #78909c !important;
+    background: transparent !important;
   }
 }
+
+.navbarNav{
+    text-decoration: underline;
+}
+/*Navbar*/
+
+/*--------Editing the position of the cover text over the backgriound image--------------------------*/
+/*-------------Cover text customised to white and moved down the screen to look more appeasing by taking account of background image to the user*/
+.white-text{
+  top: 360px;
+  color: white;
+}
+/*-------------Cover text customised*/
 
 h1 {
   letter-spacing: 8px;
@@ -37,9 +50,20 @@ h1 {
 
 h5 {
   letter-spacing: 3px;
+  font-size: 20px; /*font size adjusted to appear bigger on screen*/
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.1); /* Black background with 0.5 opacity */
+  color:whitesmoke;
 }
+
 
 .hr-light {
   border-top: 3px solid #fff;
   width: 80px;
 }
+
+.btn-outline-white {
+    border: 1px solid white;
+}
+/*--------Editing the position of the cover text over the background image*/
+
